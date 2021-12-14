@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sử dụng vòng lặp for</title>
+</head>
+<body>
+
+<!--Bài 1-->
+<!--<p id="ketQua"></p>-->
+<!--<script>-->
+<!--    let text = "";-->
+<!--    let i;-->
+<!--    for (i = 0; i < 5; i++) {-->
+<!--        text += "The number is " + i + "<br>";-->
+<!--    }-->
+<!--    document.getElementById("ketQua").innerHTML = text;-->
+<!--</script>-->
+
+<!--Bài 2-->
+
+<input type="number" id="number" placeholder="Nhập sô dương bất kỳ" min="1">
+<button onclick="tinhTong()">Tính tổng</button>
+<p id="ketQua"></p>
+
+<script>
+    function tinhTong() {
+
+        let total = 0;
+        let number = parseInt(document.getElementById("number").value);
+        for (let i = 1; i <= number; i++) {
+            total += i
+        }
+        document.getElementById("ketQua").innerHTML = "Tổng là: " + total
+    }
+
+</script>
+
+
+
+</body>
+</html>
